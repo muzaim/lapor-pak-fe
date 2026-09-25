@@ -240,7 +240,7 @@ export default function AdminReportDetailPage() {
 											report.image_url ||
 											(report.image?.startsWith("http")
 												? report.image
-												: `http://localhost:3000${report.image}`)
+												: `${import.meta.env.VITE_SERVER_URL || "http://localhost:3000"}${report.image}`)
 										}
 										alt="Foto Bukti"
 										className="max-h-80 object-contain"

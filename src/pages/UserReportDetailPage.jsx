@@ -90,11 +90,10 @@ export default function UserReportDetailPage() {
 						? img.url || img.image_url || img.path || ""
 						: String(img);
 				if (!raw) return null;
+				const serverUrl = import.meta.env.VITE_SERVER_URL || "http://localhost:3000";
 				return raw.startsWith("http")
 					? raw
-					: `http://localhost:3000${
-							raw.startsWith("/") ? "" : "/"
-					  }${raw}`;
+					: `${serverUrl}${raw.startsWith("/") ? "" : "/"}${raw}`;
 			})
 			.filter(Boolean);
 	};
