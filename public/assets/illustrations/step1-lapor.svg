@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 380" fill="none">
+  <!-- Background subtle blob -->
+  <path d="M420 220C440 300 360 360 280 370C200 380 110 340 70 270C30 200 60 110 130 60C200 10 300 20 370 70C440 120 400 140 420 220Z" fill="#F1F5F9"/>
+  
+  <!-- Desk / Base -->
+  <rect x="50" y="310" width="400" height="8" rx="4" fill="#CBD5E1"/>
+
+  <!-- Mobile Phone Device -->
+  <rect x="180" y="70" width="140" height="240" rx="20" fill="#0F172A"/>
+  <rect x="188" y="82" width="124" height="216" rx="12" fill="#FFFFFF"/>
+  <rect x="230" y="75" width="40" height="4" rx="2" fill="#334155"/>
+
+  <!-- Phone Screen Header -->
+  <rect x="198" y="98" width="104" height="28" rx="6" fill="#0284C7"/>
+  <circle cx="212" cy="112" r="6" fill="#FFFFFF" opacity="0.9"/>
+  <rect x="226" y="109" width="60" height="6" rx="3" fill="#FFFFFF" opacity="0.9"/>
+
+  <!-- Form Fields on Screen -->
+  <rect x="198" y="136" width="104" height="24" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
+  <rect x="206" y="145" width="50" height="6" rx="3" fill="#94A3B8"/>
+
+  <rect x="198" y="168" width="104" height="48" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
+  <rect x="206" y="178" width="70" height="6" rx="3" fill="#94A3B8"/>
+  <rect x="206" y="190" width="45" height="6" rx="3" fill="#CBD5E1"/>
+
+  <!-- Image Upload Box on Screen -->
+  <rect x="198" y="224" width="104" height="36" rx="6" fill="#E0F2FE" stroke="#0284C7" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <path d="M242 238L250 246L258 238M250 246V232" stroke="#0284C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Submit Button on Screen -->
+  <rect x="198" y="268" width="104" height="22" rx="6" fill="#0284C7"/>
+  <rect x="230" y="276" width="40" height="6" rx="3" fill="#FFFFFF"/>
+
+  <!-- Character / Person on Left -->
+  <!-- Legs -->
+  <rect x="120" y="220" width="14" height="90" rx="7" fill="#1E293B"/>
+  <rect x="142" y="220" width="14" height="90" rx="7" fill="#334155"/>
+  <!-- Shoes -->
+  <path d="M110 305C110 305 135 305 135 310H110V305Z" fill="#0284C7"/>
+  <path d="M132 305C132 305 157 305 157 310H132V305Z" fill="#0284C7"/>
+  <!-- Torso -->
+  <path d="M110 145C110 145 160 145 160 225H110V145Z" fill="#0284C7"/>
+  <!-- Arm pointing to phone -->
+  <path d="M145 160L190 140" stroke="#E2E8F0" stroke-width="12" stroke-linecap="round"/>
+  <!-- Head & Hair -->
+  <circle cx="135" cy="115" r="20" fill="#FDBA74"/>
+  <path d="M120 110C120 95 135 90 150 100C155 105 150 120 150 120C140 120 135 125 120 110Z" fill="#0F172A"/>
+
+  <!-- Floating Document Card Icon (Top Right) -->
+  <g transform="translate(340, 100)">
+    <rect x="0" y="0" width="70" height="85" rx="8" fill="#FFFFFF" filter="drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.08))"/>
+    <rect x="10" y="12" width="30" height="6" rx="3" fill="#0284C7"/>
+    <rect x="10" y="26" width="50" height="5" rx="2.5" fill="#CBD5E1"/>
+    <rect x="10" y="37" width="42" height="5" rx="2.5" fill="#E2E8F0"/>
+    <circle cx="50" cy="62" r="12" fill="#0284C7"/>
+    <path d="M45 62L48 65L55 58" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

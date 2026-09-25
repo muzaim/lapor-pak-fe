@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 380" fill="none">
+  <!-- Background subtle blob -->
+  <path d="M70 200C50 120 130 60 210 50C290 40 380 80 420 150C460 220 430 310 360 360C290 410 190 390 120 340C50 290 90 280 70 200Z" fill="#F1F5F9"/>
+
+  <!-- Base Desk -->
+  <rect x="50" y="310" width="400" height="8" rx="4" fill="#CBD5E1"/>
+
+  <!-- Admin Dashboard Screen / Monitor -->
+  <rect x="110" y="80" width="280" height="180" rx="12" fill="#0F172A"/>
+  <rect x="118" y="90" width="264" height="160" rx="8" fill="#FFFFFF"/>
+  <rect x="230" y="260" width="40" height="50" fill="#64748B"/>
+  <rect x="200" y="305" width="100" height="8" rx="4" fill="#475569"/>
+
+  <!-- Dashboard Navbar -->
+  <rect x="118" y="90" width="264" height="24" fill="#0284C7"/>
+  <circle cx="132" cy="102" r="4" fill="#FFFFFF" opacity="0.8"/>
+  <circle cx="144" cy="102" r="4" fill="#FFFFFF" opacity="0.8"/>
+  <circle cx="156" cy="102" r="4" fill="#FFFFFF" opacity="0.8"/>
+  <rect x="175" y="98" width="80" height="8" rx="4" fill="#FFFFFF" opacity="0.9"/>
+
+  <!-- Sidebar inside Monitor -->
+  <rect x="118" y="114" width="56" height="136" fill="#F8FAFC"/>
+  <rect x="126" y="124" width="40" height="6" rx="3" fill="#0284C7"/>
+  <rect x="126" y="138" width="32" height="5" rx="2.5" fill="#94A3B8"/>
+  <rect x="126" y="150" width="36" height="5" rx="2.5" fill="#94A3B8"/>
+  <rect x="126" y="162" width="28" height="5" rx="2.5" fill="#94A3B8"/>
+
+  <!-- Main Content inside Monitor: Report Process Cards -->
+  <!-- Card 1 (Diproses) -->
+  <rect x="186" y="124" width="186" height="32" rx="6" fill="#F0F9FF" stroke="#0284C7" stroke-width="1"/>
+  <rect x="194" y="132" width="60" height="6" rx="3" fill="#0284C7"/>
+  <rect x="194" y="142" width="90" height="5" rx="2.5" fill="#64748B"/>
+  <rect x="312" y="132" width="50" height="16" rx="8" fill="#0284C7"/>
+  <rect x="322" y="137" width="30" height="6" rx="3" fill="#FFFFFF"/>
+
+  <!-- Card 2 (Verifikasi) -->
+  <rect x="186" y="164" width="186" height="32" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="194" y="172" width="50" height="6" rx="3" fill="#334155"/>
+  <rect x="194" y="182" width="100" height="5" rx="2.5" fill="#94A3B8"/>
+  <rect x="312" y="172" width="50" height="16" rx="8" fill="#FEF3C7"/>
+  <rect x="322" y="177" width="30" height="6" rx="3" fill="#D97706"/>
+
+  <!-- Card 3 (Penugasan Petugas) -->
+  <rect x="186" y="204" width="186" height="32" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="194" y="212" width="70" height="6" rx="3" fill="#334155"/>
+  <rect x="194" y="222" width="80" height="5" rx="2.5" fill="#94A3B8"/>
+
+  <!-- Floating Gear & Action Badge (Top Left) -->
+  <g transform="translate(60, 90)">
+    <circle cx="25" cy="25" r="25" fill="#0284C7" opacity="0.15"/>
+    <path d="M25 15V35M15 25H35" stroke="#0284C7" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Person / Officer Character Standing on Right -->
+  <g transform="translate(370, 150)">
+    <!-- Body & Uniform -->
+    <path d="M30 60C30 60 70 60 70 160H30V60Z" fill="#0284C7"/>
+    <!-- Head -->
+    <circle cx="50" cy="35" r="18" fill="#FDBA74"/>
+    <!-- Hair / Cap -->
+    <path d="M32 30C32 20 45 15 60 20C65 25 65 35 65 35H32Z" fill="#0F172A"/>
+    <!-- Arm with Clipboard -->
+    <path d="M40 75L15 105" stroke="#FDBA74" stroke-width="10" stroke-linecap="round"/>
+    <rect x="0" y="95" width="30" height="40" rx="4" fill="#FFFFFF" stroke="#0284C7" stroke-width="2"/>
+    <rect x="5" y="103" width="20" height="4" rx="2" fill="#0284C7"/>
+    <rect x="5" y="112" width="15" height="3" rx="1.5" fill="#94A3B8"/>
+    <rect x="5" y="119" width="18" height="3" rx="1.5" fill="#94A3B8"/>
+  </g>
+</svg>
