@@ -42,7 +42,7 @@ export default function CreateReportPage() {
 		"Infrastruktur",
 		"Pelayanan Publik",
 		"Kebersihan",
-		"Keamanan & Ketertiban",
+		"Keamanan",
 		"Lain-lain",
 	];
 

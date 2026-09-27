@@ -242,9 +242,11 @@ export default function UserDashboardPage() {
 						>
 							<option value="ALL">Semua Kategori</option>
 							<option value="Infrastruktur">Infrastruktur</option>
-							<option value="Pelayanan Publik">Pelayanan Publik</option>
+							<option value="Pelayanan Publik">
+								Pelayanan Publik
+							</option>
 							<option value="Kebersihan">Kebersihan</option>
-							<option value="Keamanan & Ketertiban">Keamanan & Ketertiban</option>
+							<option value="Keamanan">Keamanan</option>
 							<option value="Lain-lain">Lain-lain</option>
 						</select>
 					</div>
