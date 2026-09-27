@@ -125,7 +125,7 @@ export default function AdminDashboardLayout() {
 	const { title, subtitle } = getTabTitle();
 
 	return (
-		<div className="flex min-h-screen bg-slate-100/70 font-sans text-slate-900 relative">
+		<div className="flex min-h-screen bg-slate-100/70 font-sans text-slate-900 relative w-full max-w-full overflow-x-hidden">
 			{/* Mobile Drawer Overlay Backdrop */}
 			{sidebarOpen && (
 				<div
@@ -141,14 +141,14 @@ export default function AdminDashboardLayout() {
 			/>
 
 			{/* Main Content Area */}
-			<div className="flex-1 flex flex-col min-w-0">
+			<div className="flex-1 flex flex-col min-w-0 max-w-full overflow-x-hidden">
 				<AdminHeader
 					title={title}
 					subtitle={subtitle}
 					onToggleSidebar={() => setSidebarOpen((prev) => !prev)}
 				/>
 
-				<main className="p-4 sm:p-6 md:p-8 flex-1 max-w-7xl w-full mx-auto">
+				<main className="p-4 sm:p-6 md:p-8 flex-1 max-w-7xl w-full mx-auto overflow-x-hidden">
 					{renderContent()}
 				</main>
 			</div>

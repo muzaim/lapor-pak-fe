@@ -72,10 +72,10 @@ function PublicLayout({ children }) {
   const isHomePage = location.pathname === '/';
 
   return (
-    <div className="min-h-screen flex flex-col justify-between bg-slate-50 font-sans text-slate-900">
-      <div className="flex-1 flex flex-col">
+    <div className="min-h-screen flex flex-col justify-between bg-slate-50 font-sans text-slate-900 w-full max-w-full overflow-x-hidden">
+      <div className="flex-1 flex flex-col w-full max-w-full overflow-x-hidden">
         <Navbar />
-        <main className={`flex-1 flex flex-col ${isHomePage ? '' : 'pt-16'}`}>{children}</main>
+        <main className={`flex-1 flex flex-col w-full max-w-full overflow-x-hidden ${isHomePage ? '' : 'pt-16'}`}>{children}</main>
       </div>
       <Footer />
     </div>
