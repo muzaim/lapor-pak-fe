@@ -185,27 +185,6 @@ export default function Footer() {
 							Dapatkan info pembaruan laporan dan pengumuman resmi
 							desa langsung ke email Anda.
 						</p>
-						<form
-							onSubmit={(e) => e.preventDefault()}
-							className="flex overflow-hidden rounded-xl border border-white/15 bg-white/5"
-						>
-							<input
-								type="email"
-								placeholder="Email Anda"
-								aria-label="Email address"
-								className="min-w-0 flex-1 bg-transparent px-4 py-3 text-xs sm:text-sm text-white outline-none placeholder:text-slate-500"
-							/>
-							<button
-								type="submit"
-								aria-label="Subscribe"
-								className="flex w-12 shrink-0 items-center justify-center bg-white text-slate-950 transition duration-200 cursor-pointer hover:bg-sky-400"
-							>
-								<ArrowRight className="w-4 h-4" />
-							</button>
-						</form>
-						<p className="mt-3 text-[11px] text-slate-500">
-							Bebas spam. Batal berlangganan kapan saja.
-						</p>
 					</div>
 				</div>
 			</div>

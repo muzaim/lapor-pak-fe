@@ -15,7 +15,7 @@ export default function CaraKerjaPage() {
 	const mainSteps = [
 		{
 			number: "01",
-			title: "1. Bikin Laporan",
+			title: "1. Membuat Laporan",
 			description:
 				"Ambil foto kendala di lapangan, tuliskan rincian lokasi spesifik serta penjelasan masalah, lalu kirimkan laporan secara instan melalui sistem.",
 			details: [
@@ -55,7 +55,9 @@ export default function CaraKerjaPage() {
 				<div className="max-w-7xl mx-auto space-y-4 text-left">
 					<Link
 						to="/"
-						onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+						onClick={() =>
+							window.scrollTo({ top: 0, behavior: "smooth" })
+						}
 						className="inline-flex items-center gap-2 text-xs font-bold text-sky-400 hover:text-sky-300 transition-colors"
 					>
 						<ArrowLeft className="w-4 h-4" /> Kembali ke Beranda
@@ -67,15 +69,23 @@ export default function CaraKerjaPage() {
 								Cara Kerja & Alur Pengaduan
 							</h1>
 							<p className="text-slate-300 text-xs sm:text-sm md:text-base max-w-2xl leading-relaxed">
-								Pelajari bagaimana pengaduan Anda diproses secara transparan dari pengajuan awal, verifikasi admin, penanganan di lapangan, hingga laporan tuntas.
+								Pelajari bagaimana pengaduan Anda diproses
+								secara transparan dari pengajuan awal,
+								verifikasi admin, penanganan di lapangan, hingga
+								laporan tuntas.
 							</p>
 						</div>
 
 						<div className="bg-white/10 backdrop-blur-md p-5 rounded-2xl border border-white/15 text-xs space-y-1.5 min-w-[240px] text-left">
-							<p className="text-slate-300 font-medium">Komitmen Pelayanan</p>
-							<p className="text-xl font-extrabold text-white">Transparan & Terpantau</p>
+							<p className="text-slate-300 font-medium">
+								Komitmen Pelayanan
+							</p>
+							<p className="text-xl font-extrabold text-white">
+								Transparan & Terpantau
+							</p>
 							<p className="text-[11px] text-sky-300 leading-relaxed">
-								Setiap progres perbaikan dilengkapi bukti foto nyata dari tim lapangan {villageName}.
+								Setiap progres perbaikan dilengkapi bukti foto
+								nyata dari tim lapangan {villageName}.
 							</p>
 						</div>
 					</div>
@@ -91,7 +101,9 @@ export default function CaraKerjaPage() {
 							3 Langkah Mudah Menyampaikan Laporan
 						</h2>
 						<p className="text-slate-600 text-xs sm:text-sm max-w-2xl">
-							Alur kerja dirancang sederhana agar setiap warga dapat melapor dengan cepat dan memantau perkembangannya secara terbuka.
+							Alur kerja dirancang sederhana agar setiap warga
+							dapat melapor dengan cepat dan memantau
+							perkembangannya secara terbuka.
 						</p>
 					</div>
 
@@ -112,8 +124,13 @@ export default function CaraKerjaPage() {
 								</p>
 								<ul className="pt-2 space-y-1.5 text-xs text-slate-500">
 									{step.details.map((detail, i) => (
-										<li key={i} className="flex items-start gap-2">
-											<span className="text-sky-600 font-bold">•</span>
+										<li
+											key={i}
+											className="flex items-start gap-2"
+										>
+											<span className="text-sky-600 font-bold">
+												•
+											</span>
 											<span>{detail}</span>
 										</li>
 									))}
@@ -132,15 +149,24 @@ export default function CaraKerjaPage() {
 						<ul className="space-y-2.5 text-xs sm:text-sm text-slate-600 leading-relaxed">
 							<li className="flex items-start gap-2.5">
 								<span className="w-1.5 h-1.5 rounded-full bg-emerald-600 shrink-0 mt-2" />
-								<span>Kerusakan fasilitas publik (jalan berlubang, jembatan rusak, penerangan jalan mati).</span>
+								<span>
+									Kerusakan fasilitas publik (jalan berlubang,
+									jembatan rusak, penerangan jalan mati).
+								</span>
 							</li>
 							<li className="flex items-start gap-2.5">
 								<span className="w-1.5 h-1.5 rounded-full bg-emerald-600 shrink-0 mt-2" />
-								<span>Masalah kebersihan & lingkungan (tumpukan sampah liar, saluran drainase tersumbat).</span>
+								<span>
+									Masalah kebersihan & lingkungan (tumpukan
+									sampah liar, saluran drainase tersumbat).
+								</span>
 							</li>
 							<li className="flex items-start gap-2.5">
 								<span className="w-1.5 h-1.5 rounded-full bg-emerald-600 shrink-0 mt-2" />
-								<span>Gangguan pelayanan administrasi atau ketertiban umum di wilayah desa.</span>
+								<span>
+									Gangguan pelayanan administrasi atau
+									ketertiban umum di wilayah desa.
+								</span>
 							</li>
 						</ul>
 					</div>
@@ -152,15 +178,24 @@ export default function CaraKerjaPage() {
 						<ul className="space-y-2.5 text-xs sm:text-sm text-slate-600 leading-relaxed">
 							<li className="flex items-start gap-2.5">
 								<span className="w-1.5 h-1.5 rounded-full bg-rose-600 shrink-0 mt-2" />
-								<span>Laporan fiktif, ujaran kebencian, mengandung SARA, atau tanpa foto bukti jelas.</span>
+								<span>
+									Laporan fiktif, ujaran kebencian, mengandung
+									SARA, atau tanpa foto bukti jelas.
+								</span>
 							</li>
 							<li className="flex items-start gap-2.5">
 								<span className="w-1.5 h-1.5 rounded-full bg-rose-600 shrink-0 mt-2" />
-								<span>Masalah sengketa lahan atau konflik pribadi antar warga yang bukan domain publik.</span>
+								<span>
+									Masalah sengketa lahan atau konflik pribadi
+									antar warga yang bukan domain publik.
+								</span>
 							</li>
 							<li className="flex items-start gap-2.5">
 								<span className="w-1.5 h-1.5 rounded-full bg-rose-600 shrink-0 mt-2" />
-								<span>Lokasi kejadian di luar batas administratif wilayah {villageName}.</span>
+								<span>
+									Lokasi kejadian di luar batas administratif
+									wilayah {villageName}.
+								</span>
 							</li>
 						</ul>
 					</div>
@@ -173,12 +208,16 @@ export default function CaraKerjaPage() {
 							Punya Kendala Lingkungan Di Sekitar Anda?
 						</h2>
 						<p className="text-slate-300 text-xs sm:text-sm leading-relaxed font-normal">
-							Mari bersama menjaga kenyamanan desa dengan melaporkan setiap kendala secara cepat dan terpantau.
+							Mari bersama menjaga kenyamanan desa dengan
+							melaporkan setiap kendala secara cepat dan
+							terpantau.
 						</p>
 						<div className="pt-4 flex flex-wrap items-center justify-center gap-4">
 							<button
 								onClick={() =>
-									navigate(user ? "/reports/create" : "/register")
+									navigate(
+										user ? "/reports/create" : "/register"
+									)
 								}
 								className="px-8 py-3.5 text-xs sm:text-sm font-bold text-white bg-sky-600 hover:bg-sky-500 rounded-xl shadow-lg transition-all cursor-pointer flex items-center gap-2"
 							>

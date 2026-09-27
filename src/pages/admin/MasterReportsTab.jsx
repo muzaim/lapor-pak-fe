@@ -142,6 +142,25 @@ export default function MasterReportsTab() {
     startDate !== '' ||
     endDate !== '';
 
+  const handleStartDateChange = (e) => {
+    const val = e.target.value;
+    setStartDate(val);
+    setPage(1);
+    if (endDate && val && val > endDate) {
+      setEndDate(val);
+    }
+  };
+
+  const handleEndDateChange = (e) => {
+    const val = e.target.value;
+    setPage(1);
+    if (startDate && val && val < startDate) {
+      setEndDate(startDate);
+    } else {
+      setEndDate(val);
+    }
+  };
+
   return (
     <div className="space-y-6">
       
@@ -234,7 +253,8 @@ export default function MasterReportsTab() {
             <input
               type="date"
               value={startDate}
-              onChange={(e) => { setStartDate(e.target.value); setPage(1); }}
+              max={endDate || undefined}
+              onChange={handleStartDateChange}
               className="w-full px-3 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs text-slate-800 font-medium focus:bg-white focus:outline-hidden focus:border-sky-500 cursor-pointer transition-colors"
             />
           </div>
@@ -245,7 +265,8 @@ export default function MasterReportsTab() {
             <input
               type="date"
               value={endDate}
-              onChange={(e) => { setEndDate(e.target.value); setPage(1); }}
+              min={startDate || undefined}
+              onChange={handleEndDateChange}
               className="w-full px-3 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs text-slate-800 font-medium focus:bg-white focus:outline-hidden focus:border-sky-500 cursor-pointer transition-colors"
             />
           </div>
